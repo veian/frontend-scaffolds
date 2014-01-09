@@ -1,0 +1,198 @@
+.article-head{
+  background:transparent url('../../../images/contactUs.jpg') center no-repeat;
+  height:136px;
+}
+.article-second{
+  margin-top:20px;
+}
+.block-nav{
+  a{
+    &:link, &:visited{
+      float:left;
+      margin-right:15px;
+      text-align:center;
+      color:#fff;
+      line-height:28px;
+      background-color:#98a3a3;
+    }
+    &:hover, &.selected{
+      background: transparent url('../../../images/goodsgl.jpg') no-repeat;
+    }
+    
+  }
+}
+.article-member{
+  &.article-third .article-ct{
+    background:#fff;
+  }
+  .section{
+    width:480px;
+  }
+  .block-cnt{
+    padding:40px 40px 0;
+  }
+  .block-pager{
+    padding:20px 40px 40px;
+  }
+  .items{
+    p{
+      position:relative;
+      margin-top:8px;
+      font-size:14px;
+    }
+    a{
+      &:link, &:visited{
+        
+      }
+      &:hover{
+        
+      }
+    }
+    span{
+    }
+  }
+  .pager{
+    float:right;
+    line-height:32px;
+    a{
+      &:link, &:visited{
+        
+      }
+      &:hover{
+        
+      }
+      &.prev{
+        margin-right:20px;
+      }
+      &.next{
+        
+      }
+    }
+  }
+  .slides{
+    margin-top:10px;
+    img{
+      display:block;
+    }
+    p{
+      margin-top:16px;
+      font-size:14px;
+      text-align:center;
+    }
+  }
+}
+
+.article-detail{
+  .block-slide{
+    padding:40px;
+    background-color:#fff;
+    
+    .title{
+      margin-top:20px;
+      text-align:center;
+    }
+  }
+}
+.slide-bd, .dialog{
+  position:relative;
+  
+  a{
+    &:link, &:visited{
+      display:block;
+    }
+    &:hover{
+      
+    }
+  }
+  img{
+    display:block;
+    margin:0 auto;
+    width:530px;
+    height:300px;
+  }
+  
+  .slidesjs-navigation{
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    z-index:999;
+    text-indent:-9999px;
+  }
+  .slidesjs-previous{
+    left:20px;
+    background:transparent url('../../../images/public/prev.png') no-repeat;
+  }
+  .slidesjs-next{
+    right:20px;
+    background:transparent url('../../../images/public/next.png') no-repeat;
+  }
+  .slidesjs-pagination{
+    display:none;
+  }
+}
+.dialog{
+  width:1000px;
+  height:600px;
+}
+.dialog{
+  .slidesjs-navigation{
+    position:absolute;
+    top:50%;
+    z-index:999;
+    color:#fff;
+  }
+  .slidesjs-previous{
+    left:20px;
+  }
+  .slidesjs-next{
+    right:20px;
+  }
+  .slidesjs-pagination{
+    position:absolute;
+    bottom:30px;
+    right:50px;
+    z-index:999;
+  }
+  .slidesjs-pagination-item{
+    float:left;
+    width:20px;
+    a{
+      &:link, &:visited{
+        color:#fff;
+      }
+      &:hover{
+        
+      }
+    }
+  }
+}
+.d-main {
+  padding:0;
+  text-align:center;
+  vertical-align:middle;
+  min-width:9em;
+  font-size:0;
+  line-height:0;
+  
+  img{
+    display:block;
+  }
+  .dialog{
+    img{
+      width:1000px;
+      height:600px;
+    }
+  }
+}
+.d-state-noTitle .d-close{
+  top:14px;
+  background-color:#000;
+  font-size:40px;
+  line-height:49px;
+  
+  &:hover{
+  }
+}
+.d-footer{
+  display:none;
+}

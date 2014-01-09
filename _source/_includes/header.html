@@ -1,0 +1,87 @@
+<!-- zb header -->
+<div class="bq-header">
+  <div class="bq-header-bt">
+    <div class="bq-header-btin clr">
+      <a id="logo" class="bq-logo" href="/">缤刻</a>
+      <div class="slogan l">网上预约，门店自提，地铁内的新品体验平台。走进附近的缤刻体验店</div>
+      <div class="bq-info">
+        <div class="bq-userinfo clr">
+          <div class="bq-user-wrap">
+            <!-- 未登录 -->
+            <div class="bq-user bq-unlogin clr">
+              
+              <div id="bq-login" class="bq-u">
+                <i>&nbsp;</i>
+                <a id="bq-login" class="bq-a" href="/web/pageLogin">登录</a>
+              </div>
+              <div id="bq-regist" class="bq-u">
+                <i>&nbsp;</i>
+                <a id="bq-regist" class="bq-a" href="/web/pageRegister">注册</a>
+              </div>
+              <div id="bq-follow" class="bq-u">
+                <i>&nbsp;</i>
+                <a id="bq-follow" class="bq-a" href="javascript:void(0);">关注<b class="bq-b">&nbsp;</b></a>
+                <div class="bq-follow-popout" id="bq-follow-popout" style="display:none;">
+                  <div class="bq-triangle"><b>&nbsp;</b></div>
+                  <a class="bq-weibo" href="http://e.weibo.com/blinq"><b>&nbsp;</b>缤刻官方微博</a>
+                  <a class="bq-weixin" href="javascript:void(0);"><b>&nbsp;</b>缤刻官方微信</a>
+                  <p><img src="/web/images/twCode.jpg" width="98" height="98" /></p>
+                </div>
+                <script>
+                  $(function() {
+                    var timmer = 0
+                    // 关注
+                    $('#bq-follow').bind('mouseover mouseout', function(e) {
+                      clearTimeout(timmer)
+                      if(e.type === 'mouseover') {
+                        $('#bq-follow-popout').show()
+                      } else if(e.type === 'mouseout') {
+                        timmer = setTimeout(function() {
+                          $('#bq-follow-popout').hide()
+                        }, 300)
+                      }
+                    })
+                  })
+                </script>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bq-header-bd" class="bq-header-bd">
+    <div class="bq-header-bdin clr">
+      <div class="bq-nav clr">
+        <a class="bq-nav-b" id="liClass1" href="/web/indexs">缤刻首页</a>
+        <div class="bq-line">&nbsp;</div>
+        <a class="bq-nav-b" id="liClass2" href="/web/newActivity/activityList">会员特享</a>
+        <a class="bq-nav-s" id="liClass3" href="/web/newActivity/activityList?activityRel=3#tab-3">缤刻活动</a>
+        <a class="bq-nav-s" id="liClass4" href="/web/newActivity/activityList?activityRel=4">品牌活动</a>
+        <a class="bq-nav-s" id="liClass5" href="/web/newActivity/activityList?activityRel=5#tab-2">积分兑换</a>
+        <div class="bq-line">&nbsp;</div>
+        <a class="bq-nav-b" id="liClass6" href="/web/line/blinqShop">线下门店</a>
+        <div class="bq-line">&nbsp;</div>
+        <a class="bq-nav-b" id="liClass7" href="/web/line/appDownload">APP下载</a>
+      </div>
+      <div class="nav-userinfo">
+         
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function() {
+    $("#liClass0").addClass("current");
+    $("#liClass").addClass("current");
+    
+    // 注册下方弹出层，点击按钮关闭
+    $('#close-regist').click(function(e) {
+      $('#bq-regist-popout').fadeOut('fast')
+    })
+  })
+</script>
+<!-- zb header end -->
