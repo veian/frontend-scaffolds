@@ -4,6 +4,8 @@ title: index
 slug: index
 lead: "index"
 ---
+<ul>
 {% for post in site.pages %}
       <li><a href="{{ post.url }}">{{ post.title }}</a><p>{{ post.lead }}</p></li>
 {% endfor %}
+</ul>
