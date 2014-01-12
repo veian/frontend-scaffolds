@@ -26,6 +26,13 @@ module.exports = function (grunt) {
 				src: '{,*/}*.js',
 				dest: '_web/js/'
 			},
+			lib: {
+				expand: true,
+				dot: true,
+				cwd: 'lib/',
+				src: '{,*/}*.min.js',
+				dest: '_web/lib/'
+			},
 			images: {
 				expand: true,
 				dot: true,
