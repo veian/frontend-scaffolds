@@ -5,12 +5,15 @@ module.exports = function (grunt) {
 	require('time-grunt')(grunt); // Time how long tasks take. Can help when optimizing build times
 	
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+		
 		watch: {
 			statics: {
 				files: ['css/{,*/}*.css', 'js/{,*/}*.js', 'images/{,*/}*.{gif,jpeg,jpg,png}'],
 				tasks: ['copy']
 			}
 		},
+		
 		copy: {
 			styles: {
 				expand: true,
@@ -40,6 +43,21 @@ module.exports = function (grunt) {
 				src: '{,*/}*.{gif,jpeg,jpg,png}',
 				dest: '_web/images/'
 			}
+		},
+		
+		 compress: {
+			main: {
+				options: {
+					archive: '_release/<%= pkg.name %>-<%= grunt.template.today("yyyy-mm-dd-HHMMss") %>-' + 'release.zip'
+				},
+				files: [{
+					expand: true,
+					cwd: '_web',
+					src: ['**/*']
+				}]
+			}
 		}
+		
+		// grunt.registerTask('default', []);
 	});
 };
