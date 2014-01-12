@@ -2,7 +2,7 @@
 jekyll serve --watch --detach
 
 # compass
-compass watch
+screen compass watch
 
 # grunt watch
-grunt watch
+screen grunt watch
