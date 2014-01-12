@@ -7,7 +7,7 @@ permalink:        none
 
 # Server
 source:           ./_source
-destination:      ./_blinq_web
+destination:      ./_web
 host:             0.0.0.0
 port:             9001
 baseurl:          /
@@ -15,5 +15,5 @@ url:              http://localhost:9001
 
 # Custom vars
 current_version:  0.0.1
-repo:             http://www.blinq.cn/
-sass_repo:        http://www.blinq.cn/
+repo:             http://www.example.cn/
+sass_repo:        http://www.example.cn/
